@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Kalkulus</title>
+    
+        <!-- Tambahkan library Math.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+    
+        <link rel="stylesheet" href="style.css">
+    </head>  
+    <body>
+        <header>
+            <h1>Blog Kalkulus</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#latihan">Latihan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h2>Selamat Datang di Blog Kalkulus</h2>
+                <p>Pelajari konsep kalkulus mulai dari dasar hingga lanjutan!</p>
+                <p>by Fitri Rachmadani Jurusan Matematika </p>
+            </section>
+
+            <section id="materi" class="articles">
+                <article>
+                    <h2>Pengenalan Kalkulus</h2>
+                    <p>Kalkulus adalah cabang matematika yang membahas tentang perubahan dan digunakan dalam banyak bidang seperti fisika, teknik, dan ekonomi.</p>
+                    <img src="images/pengenalan_kalkulus.jpg" alt="Pengenalan Kalkulus" />
+                </article>
+
+                <article>
+                    <h2>Limit dan Kontinuitas</h2>
+                    <p>Limit adalah konsep dasar dalam kalkulus yang digunakan untuk mendekati nilai suatu fungsi di titik tertentu.</p>
+                    <p><strong>Contoh:</strong> <br> \( \lim_{x \to 2} (x^2 + 3x + 1) \)</p>
+                    <img src="images/limit.jpg" alt="Limit" />
+                </article>
+
+                <article>
+                    <h2>Turunan dan Aplikasinya</h2>
+                    <p>Turunan digunakan untuk menghitung laju perubahan dan memiliki banyak aplikasi dalam sains dan teknik.</p>
+                    <p><strong>Contoh:</strong> Jika \( f(x) = x^2 + 3x + 5 \), maka turunan pertama adalah \( f'(x) = 2x + 3 \).</p>
+                    <img src="images/turunan.jpg" alt="Turunan" />
+                </article>
+
+                <article>
+                    <h2>Integral dan Aplikasinya</h2>
+                    <p>Integral adalah operasi yang merupakan kebalikan dari turunan dan sering digunakan untuk menghitung luas di bawah kurva.</p>
+                    <p><strong>Contoh:</strong> Jika \( f(x) = x^2 \), maka integralnya adalah \( \int x^2 dx = \frac{x^3}{3} + C \).</p>
+                    <img src="images/integral.jpg" alt="Integral" />
+                </article>
+            </section>
+
+            <section id="latihan" class="kalkulator">
+                <h2>Kalkulator Kalkulus</h2>
+                <label for="expression">Masukkan fungsi f(x):</label>
+                <input type="text" id="expression" placeholder="Contoh: x^2 + 3x + 5">
+                
+                <button onclick="hitungTurunan()">Hitung Turunan</button>
+                <button onclick="hitungIntegral()">Hitung Integral</button>
+                
+                <h3>Hasil:</h3>
+                <p id="hasil"></p>
+            </section>
+
+            <section id="kontak" class="komentar">
+                <h2>Tinggalkan Komentar</h2>
+                <form id="formKomentar">
+                    <input type="text" id="nama" placeholder="Nama" required>
+                    <textarea id="pesan" placeholder="Tulis komentar..." required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+                <div id="daftarKomentar"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Blog Kalkulus | Dibuat dengan ❤️ oleh Fitri Rachmadani</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
